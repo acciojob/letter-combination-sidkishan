@@ -19,9 +19,9 @@ function letterCombinations(input_digit) {
 	var rest = input_digit.substring(1);
 	var small = letterCombinations(rest);
 	var ans = [];
-	for(var i = 0; i < keys[fd].length; i++){
+	for(var i = 0; i < keys["fd"].length; i++){
 		for(var j = 0; j < small.length; j++){
-			var str = keys[fd].charAt(i) + small[j];
+			var str = keys["fd"].charAt(i) + small[j];
 			ans.push(str);
 		}
 	}
